@@ -73,7 +73,7 @@ export default function App(prop) {
               <Col lg={8} md={8} sm={12}>
                 <div className="BannerContent">
                   <h1>
-                    Best Way To Buy And Sell <br /> Your Trades
+                    Best Way To Buy And Sell Test <br /> Your Trades
                   </h1>
                   <p>
                     We will show you the best way to be an option in selling and
