@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 // import React, { useState } from 'react';
@@ -12,11 +12,9 @@ import { useAuth } from '../components/AuthContext';
 import React, { useState, useEffect } from 'react';
 
 function Header() {
-// Retrieve light mode state from localStorage or default to false
 const storedLightMode = localStorage.getItem('lightMode') === 'true';
 const [isLightMode, setIsLightMode] = useState(storedLightMode);
 
-// Toggle light mode and update localStorage
 const toggleLightMode = () => {
   const newLightMode = !isLightMode;
   setIsLightMode(newLightMode);
@@ -24,17 +22,27 @@ const toggleLightMode = () => {
   localStorage.setItem('lightMode', newLightMode);
 };
 
+const [hideFilterIcon, setHideFilterIcon] = useState(false);
+const location = useLocation();
+
+useEffect(() => {
+    if (location.pathname.includes('/stocks')) {
+        setHideFilterIcon(true);
+    } else {
+        setHideFilterIcon(false);
+    }
+}, [location]);
+
 // Set light mode class on initial mount
 useEffect(() => {
   document.body.classList.toggle('light_mode', isLightMode);
 }, [isLightMode]);
 
   const { authenticated, logout } = useAuth();
+
   return (
 
     <>
-
-
       <header className="mastheader">
         <div className="container-fluid">
           <Navbar
@@ -73,7 +81,9 @@ useEffect(() => {
                   <a href="#" className="dropbtn">Groups <FaChevronDown className="custom-chevron" /></a>
                   <div className="dropdown-content">
                     <a className="dropdown-item"  href="javascript:void(0);">Currencies</a>
-                    <a className="dropdown-item" href="javascript:void(0);">Stocks</a>
+                    <Link className="" to="/stocks">
+                      Stocks
+                    </Link>
                     <a  className="dropdown-item" href="javascript:void(0);">Commodities</a>
                   </div>
                 </li>
@@ -117,11 +127,13 @@ useEffect(() => {
                     <img src="assets/images/search.png" />
                   </a>
                 </li>
-                <li>
-                  <a href="#"  onClick={toggleLightMode}>
-                    <img src="assets/images/filter.png" />
-                  </a>
-                </li>
+                {!hideFilterIcon && (
+                    <li>
+                        <a href="#" onClick={toggleLightMode}>
+                            <img src="assets/images/filter.png" />
+                        </a>
+                    </li>
+                )}           
               </ul>
             </div>
           </Navbar>
