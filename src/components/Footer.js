@@ -34,9 +34,9 @@ function Footer() {
                     Contact
                   </Link>
                 </li>
-                <li>
+                {/* <li>
                   <a href="javascript:void(0);">Partnership</a>
-                </li>
+                </li> */}
               </ul>
             </Col>
             <Col lg={4} md={4} sm={12}>

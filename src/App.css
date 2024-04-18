@@ -2188,3 +2188,6 @@ span.member p {
   border: none;
   text-transform: capitalize;
 }
+.OurBestPlatform .changes_platform  p {
+  margin-bottom: 25px !important;
+}

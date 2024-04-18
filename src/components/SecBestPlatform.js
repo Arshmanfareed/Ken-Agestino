@@ -11,9 +11,9 @@ function SecBestPlatform() {
             </div>
           </Col>
           <Col sm={12} md={6} lg={6}>
-            <div className="PlatformCon">
-              <h2 className="theme-h2">Development Of Our Best Platform</h2>
-              <div id="projectFacts" className="sectionclassName">
+            <div className="PlatformCon changes_platform">
+              <h2 className="theme-h2">Your Trading Room is an interactive site for independent traders</h2>
+              {/* <div id="projectFacts" className="sectionclassName">
                 <div className="fullWidth eight columns">
                   <div className="projectFactsWrap ">
                     <div
@@ -48,9 +48,15 @@ function SecBestPlatform() {
                     </div>
                   </div>
                 </div>
-              </div>
+              </div> */}
               <p>
-                Your Trade Desk is an interactive site where independent traders convene to share ideas on trades and potential trade ideas. Groups will be formed for those with similar styles, markets traded, etc. Traders are encouraged to share trades they either are in already, close to entering and why, or just monitor what other traders are doing. Trading as an independent is difficult. Your Trade Desk (YTD) offers the advantages of a collaborative group, bouncing ideas off one another, seeing what might be working for others that you may not have thought of. The trades are not chosen by a moderator… for traders, by traders.
+                Trading alone can be difficult, at YTR, you can join in discussion groups about what stocks are being traded and what strategies are being employed.
+              </p>
+              <p>
+                Create your own groups that may be more specific to the products you trade or the style; swing traders, scalpers, etc.
+              </p>
+              <p>
+                Don’t go it alone!
               </p>
             </div>
           </Col>
