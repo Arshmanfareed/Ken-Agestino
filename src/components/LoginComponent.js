@@ -24,9 +24,8 @@ const LoginComponent = () => {
                 localStorage.setItem('user_id', response.data.user_id);
                 localStorage.setItem('user_name', response.data.user_name);
                 
-                window.location.href = '/dashboard'; 
-            } else {
-                
+                window.location.href = '/profile'; 
+            } else {                
                 console.log(response.data.message);
             }
         } catch (error) {

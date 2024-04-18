@@ -6,6 +6,7 @@ import { Link } from 'react-router-dom';
 import { FaChevronDown } from 'react-icons/fa';
 import { useAuth } from '../components/AuthContext';
 import axios from 'axios';
+
 const apiURL = process.env.REACT_APP_API_URL;
 
 function UserInfo() {
@@ -32,10 +33,10 @@ function UserInfo() {
     return (
         <>
         <li className="dropdown userinfo">
-            <Link className="dropbtn" to="/dashboard">Dashboard <FaChevronDown className="custom-chevron" /></Link>
+            {/* <Link className="dropbtn" to="/dashboard">Dashboard <FaChevronDown className="custom-chevron" /></Link> */}
+            <Link className="dropbtn" to="/profile">Profile <FaChevronDown className="custom-chevron" /></Link>
             
-            <div className="dropdown-content">  
-                <Link className="dropbtn" to="/profile">Profile</Link>                    
+            <div className="dropdown-content">                                      
                 {/* <a href="javascript:void(0);" className="dropdown-item">{userData.name}</a>
                 <a className="dropdown-item" href="javascript:void(0);">{userData.email}</a> */}
                 <button className='logout' onClick={logout}>Logout</button>

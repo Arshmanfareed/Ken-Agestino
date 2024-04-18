@@ -11,6 +11,7 @@ import RegisterPage from './pages/RegisterPage';
 import LoginPage from "./pages/LoginPage";
 import Dashboard from "./pages/Dashboard";
 import Profile from "./pages/Profile";
+import UserProfile from "./pages/UserProfile";
 import PasswordReset from "./pages/PasswordReset";
 import PasswordForget from "./pages/PasswordForget";
 
@@ -29,8 +30,9 @@ function App() {
             <Route path="/contact" element={<Contact />} />
             <Route path="/register" element={<RegisterPage />} />
             <Route path="/login" element={<LoginPage />} />
-            <Route path="/dashboard" element={<Dashboard />} />
-            <Route path="/profile" element={<Profile />} />
+            <Route path="/stocks" element={<Dashboard />} />
+            <Route path="/profile" element={<UserProfile />} />
+            <Route path="/editprofile" element={<Profile />} />
             <Route path="/passwordforget" element={<PasswordForget />} />
             <Route path="/passwordreset" element={<PasswordReset />} />
 
