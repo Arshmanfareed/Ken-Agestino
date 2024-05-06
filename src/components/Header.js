@@ -78,7 +78,7 @@ useEffect(() => {
                   </Link>
                 </li>
                 <li className="dropdown">
-                  <a href="#" className="dropbtn">Groups <FaChevronDown className="custom-chevron" /></a>
+                  <a href="#" className="dropbtn">Trading Room <FaChevronDown className="custom-chevron" /></a>
                   <div className="dropdown-content">
                     <a className="dropdown-item"  href="javascript:void(0);">Currencies</a>
                     <Link className="" to="/stocks">
