@@ -17,6 +17,7 @@ function Dashboard() {
   const navigate = useNavigate();
 
   useEffect(() => {
+    
       if (!authenticated) {
           navigate('/login');
       } 
@@ -70,7 +71,9 @@ function Dashboard() {
           
           <Row className="chat_row">
             <Col  lg={12}>
-            <Dashboard_tabs/>
+              {authenticated && <Dashboard_tabs />}
+
+            
             </Col>
           </Row>
 

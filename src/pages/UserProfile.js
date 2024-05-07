@@ -4,7 +4,9 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import axios from 'axios';
 import { CiEdit } from "react-icons/ci";
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
+import { useAuth } from '../components/AuthContext';
+
 
 
 
@@ -14,6 +16,15 @@ const apiURL = process.env.REACT_APP_API_URL;
 const UserProfile = () => {
   const [userData, setUserData] = useState({});
   const user_id = localStorage.getItem('user_id');
+  const { authenticated, logout } = useAuth();
+    const navigate = useNavigate();
+
+    useEffect(() => {      
+        if (!authenticated) {
+            navigate('/login');
+        } 
+    }, [authenticated, navigate]);
+
 
   const fetchData = async () => {
     try {
