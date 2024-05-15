@@ -164,7 +164,7 @@ footer#theme-footer ul.footer-icons li a::before {
 }
 .BannerSlider .BannerContent p {
   padding: 50px 0;
-  width: 50%;
+  width: 75%;
 }
 .theme-btn a.vc_general img {
   width: unset;
@@ -310,6 +310,7 @@ h2.theme-h2 {
 section.OurBestPlatform {
   padding-top: 50px;
   padding-bottom: 100px;
+  position: relative;
 }
 /*------------ BEST-FEATURES-CSS -----------*/
 .section-title h2.theme-h2 {
@@ -1527,16 +1528,17 @@ body.light_mode {
   /* background: #F9F9F9 !important; */
 }
 body.light_mode header.mastheader div#navbarSupportedContent ul.navbar-nav li a {
-  color: oklch(0 0 0 / .6);
+  color: #fff;
 }
 body.light_mode header.mastheader div#navbarSupportedContent ul.navbar-nav li.active a {
-  color: #000;
+  color: #fff;
+  font-weight:500;
 }
 body.light_mode .header-icon {
-  filter: invert(1);
+  /* filter: invert(1); */
 }
 body.light_mode h1.text-white {
-  color: #000 !important;
+  color: #fff !important;
 }
 body.light_mode .BannerSlider .BannerContent h1 {
   color: #000;
@@ -1562,10 +1564,10 @@ body.light_mode .OurBestPlatform .PlatformCon .projectFactsWrap .number {
   color: #000;
 }
 body.light_mode footer#theme-footer ul li a {
-  color: #000;
+  color: #fff;
 }
 body.light_mode p.theme-para a {
-  color: #000;
+  color: #fff;
 }
 body.light_mode .FeatureBox {
   background: lch(100 0 0 / .5);
@@ -1590,19 +1592,19 @@ body.light_mode section.NewsletterSec .NewsletterCon form input.btn-primary {
   background: #5068E7;
   color: #fff;
 }
-body.light_mode footer#theme-footer {background: #F9F9F9 !important;}
+body.light_mode footer#theme-footer {background: #5a68e2  !important;}
 body.light_mode footer#theme-footer h3 {
-  color: #000;
+  color: #fff;
 }
 body.light_mode footer#theme-footer p {
-  color: #000;
+  color: #fff;
 }
 body.light_mode footer#theme-footer ul.footer-icons li a {
-  color: #5068E7;
-  background: oklab(0.57 0 -0.19 / .1);
-  border: none;
+     color: #5068E7;
+    background: oklab(1 0 0);
+    border: none;
 }
-body.light_mode section.BestFeatures:after {
+body.light_mode section.OurBestPlatform:after {
   content: '';
   background-image: url(../public/assets/images/shadow01.png);
   background-repeat: no-repeat;
@@ -2225,4 +2227,25 @@ span.edit_profile_btn a svg {
 }
 body.light_mode  span.edit_profile_btn a {
   color: #000;
+}
+.light_mode header.mastheader {
+  background: #5a68e2;
+}
+body.light_mode {
+  position: relative;
+}
+
+body.light_mode:after {
+  content: '';
+  background-image: url(../public/assets/images/shadow01.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 701px;
+  height: 587px;
+  position: absolute;
+  bottom: 20%;
+  left: -10%;
+  /* background: red; */
+  z-index: 999999999;
 }

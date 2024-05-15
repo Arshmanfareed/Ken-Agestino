@@ -23,7 +23,7 @@ function Home() {
                 <SecBestPlatform />
             </section>
 
-            <section className="BestFeatures">
+            {/* <section className="BestFeatures">
                 <Container>
                     <div className="section-title">
                         <Row className="align-items-center">
@@ -60,7 +60,7 @@ function Home() {
                         />
                     </Row>
                 </Container>
-            </section>
+            </section> */}
 
             {/*<section className="VideoSec">*/}
             {/*    <SecVideo />*/}

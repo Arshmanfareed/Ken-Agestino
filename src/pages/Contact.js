@@ -46,7 +46,7 @@ function Contact() {
                     Email Us
                     <br />
                     <strong>
-                      <a href="mailto:admin@gamil.com">admin@gamil.com</a>
+                      <a href="mailto:admin@yourtradedesk.com">admin@yourtradedesk.com</a>
                     </strong>
                   </li>
                   <li>

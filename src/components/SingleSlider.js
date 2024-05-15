@@ -43,14 +43,13 @@ export default function App(prop) {
         <SwiperSlide>
           <div className="item">
             <Row className=" align-items-center">
-              <Col lg={8} md={8} sm={12}>
+              <Col lg={6} md={6} sm={12}>
                 <div className="BannerContent">
-                  <h1>
+                  {/* <h1>
                     Best Way To Buy And Sell <br /> Your Trades
-                  </h1>
+                  </h1> */}
                   <p>
-                    We will show you the best way to be an option in selling and
-                    buying Forex assets
+                  Once SPOT broke this level, it rallied$3.00
                   </p>
                   <div className="theme-btn">
                     <a className="vc_general" href="#">
@@ -59,9 +58,9 @@ export default function App(prop) {
                   </div>
                 </div>
               </Col>
-              <Col lg={4} md={4} sm={12}>
+              <Col lg={6} md={6} sm={12}>
                 <div className="BannerImage">
-                  <img src="assets/images/platform-img.png" />
+                  <img src="assets/images/01.png" />
                 </div>
               </Col>
             </Row>
@@ -70,15 +69,14 @@ export default function App(prop) {
         <SwiperSlide>
           <div className="item">
             <Row className=" align-items-center">
-              <Col lg={8} md={8} sm={12}>
+              <Col lg={6} md={6} sm={12}>
                 <div className="BannerContent">
-                  <h1>
+                  {/* <h1>
                     Best Way To Buy And Sell <br /> Your Trades
-                  </h1>
+                  </h1> */}
                   <p>
-                    We will show you the best way to be an option in selling and
-                    buying Forex assets
-                  </p>
+                  NIKE offered a strong sell opportunity on the daily charts, that same level was revisited and held multiple other times
+                   </p>
                   <div className="theme-btn">
                     <a className="vc_general" href="#">
                       See Details <img src="assets/images/btn-bf.png" />
@@ -86,9 +84,9 @@ export default function App(prop) {
                   </div>
                 </div>
               </Col>
-              <Col lg={4} md={4} sm={12}>
+              <Col lg={6} md={6} sm={12}>
                 <div className="BannerImage">
-                  <img src="assets/images/platform-img.png" />
+                  <img src="assets/images/02.png" />
                 </div>
               </Col>
             </Row>
@@ -97,14 +95,18 @@ export default function App(prop) {
         <SwiperSlide>
           <div className="item">
             <div className="row align-items-center">
-              <div className="col-lg-8 col-md-8 col-sm-12">
+              <div className="col-lg-6 col-md-6 col-sm-12">
                 <div className="BannerContent">
-                  <h1>
+                  {/* <h1>
                     Best Way To Buy And Sell <br /> Your Trades
-                  </h1>
+                  </h1> */}
                   <p>
-                    We will show you the best way to be an option in selling and
-                    buying Forex assets
+                  A great short term scalping tool is the
+convergence of multiple Moving
+Averages. The below example in DELL
+led to a move of over $1.5. The stop
+loss can be trailed with one of the
+averages
                   </p>
                   <div className="theme-btn">
                     <a className="vc_general" href="#">
@@ -113,9 +115,9 @@ export default function App(prop) {
                   </div>
                 </div>
               </div>
-              <div className="col-lg-4 col-md-4 col-sm-12">
+              <div className="col-lg-6 col-md-6 col-sm-12">
                 <div className="BannerImage">
-                  <img src="assets/images/banner-img.png" />
+                  <img src="assets/images/03.png" />
                 </div>
               </div>
             </div>
