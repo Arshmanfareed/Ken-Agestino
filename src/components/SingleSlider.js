@@ -4,6 +4,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination, Autoplay } from 'swiper/modules';
 import { Row, Col } from 'react-bootstrap';
 
+import { Link } from 'react-router-dom';
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/pagination';
@@ -43,22 +44,22 @@ export default function App(prop) {
         <SwiperSlide>
           <div className="item">
             <Row className=" align-items-center">
-              <Col lg={6} md={6} sm={12}>
+              <Col lg={5} md={5} sm={12}>
                 <div className="BannerContent">
                   {/* <h1>
                     Best Way To Buy And Sell <br /> Your Trades
                   </h1> */}
-                  <p>
+                  <h4>
                   Once SPOT broke this level, it rallied$3.00
-                  </p>
+                  </h4>
                   <div className="theme-btn">
-                    <a className="vc_general" href="#">
+                  <Link className="vc_general" to="/stocks">
                       See Details <img src="assets/images/btn-bf.png" />
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </Col>
-              <Col lg={6} md={6} sm={12}>
+              <Col lg={7} md={7} sm={12}>
                 <div className="BannerImage">
                   <img src="assets/images/01.png" />
                 </div>
@@ -69,22 +70,22 @@ export default function App(prop) {
         <SwiperSlide>
           <div className="item">
             <Row className=" align-items-center">
-              <Col lg={6} md={6} sm={12}>
+              <Col lg={5} md={5} sm={12}>
                 <div className="BannerContent">
                   {/* <h1>
                     Best Way To Buy And Sell <br /> Your Trades
                   </h1> */}
-                  <p>
+                  <h4>
                   NIKE offered a strong sell opportunity on the daily charts, that same level was revisited and held multiple other times
-                   </p>
+                   </h4>
                   <div className="theme-btn">
-                    <a className="vc_general" href="#">
+                  <Link className="vc_general" to="/stocks">
                       See Details <img src="assets/images/btn-bf.png" />
-                    </a>
+                      </Link>
                   </div>
                 </div>
               </Col>
-              <Col lg={6} md={6} sm={12}>
+              <Col lg={7} md={7} sm={12}>
                 <div className="BannerImage">
                   <img src="assets/images/02.png" />
                 </div>
@@ -95,27 +96,27 @@ export default function App(prop) {
         <SwiperSlide>
           <div className="item">
             <div className="row align-items-center">
-              <div className="col-lg-6 col-md-6 col-sm-12">
+              <div className="col-lg-5 col-md-5 col-sm-12">
                 <div className="BannerContent">
                   {/* <h1>
                     Best Way To Buy And Sell <br /> Your Trades
                   </h1> */}
-                  <p>
+                  <h4>
                   A great short term scalping tool is the
 convergence of multiple Moving
 Averages. The below example in DELL
 led to a move of over $1.5. The stop
 loss can be trailed with one of the
 averages
-                  </p>
-                  <div className="theme-btn">
-                    <a className="vc_general" href="#">
+                  </h4>
+                  <div className="theme-btn">                    
+                  <Link className="vc_general" to="/stocks">
                       See Details <img src="assets/images/btn-bf.png" />
-                    </a>
+                      </Link>
                   </div>
                 </div>
               </div>
-              <div className="col-lg-6 col-md-6 col-sm-12">
+              <div className="col-lg-7 col-md-7 col-sm-12">
                 <div className="BannerImage">
                   <img src="assets/images/03.png" />
                 </div>
