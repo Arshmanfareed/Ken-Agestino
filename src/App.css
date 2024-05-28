@@ -308,7 +308,7 @@ h2.theme-h2 {
   padding-left: 15px;
 }
 section.OurBestPlatform {
-  padding-top: 50px;
+  padding-top: 170px;
   padding-bottom: 100px;
   position: relative;
 }
@@ -2257,4 +2257,55 @@ div#banner_slide h4 {
 }
 body.light_mode .swiper-pagination span {
   background: #5a68e2;
+}
+.row.graph_row {
+  display: flex !important;
+  width: 100%;
+  justify-content: space-between;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+.graph_row .graph_img {
+  width: 33%;
+  border-radius: 40px;
+  overflow: hidden;
+}
+.graph_row .graph_img img {
+  width: 100%;
+  border-radius: 30px;
+}
+section.traders_sec {
+  padding-top: 50px;
+  padding-bottom: 70px;
+}
+.modal-dialog {
+  width: 80% !important;
+  max-width: 80%;
+}
+.modal-dialog .modal-header button.close {
+  width: 30px;
+  height: 30px;
+  background: red;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 0;
+  border-radius: 100%;
+  opacity: 1;
+  color: #fff;
+}
+.graph_row .graph_img button.btn.btn-primary {
+  background: none;
+  border: none;
+}
+.graph_img .modal-body .row {
+  align-items: center;
+}
+
+.graph_img .modal-body  h4 {
+  font-size: 26px;
+  width: 90%;
+  margin: 0 auto;
+  line-height: 1.5;
+  font-weight: 600;
 }
