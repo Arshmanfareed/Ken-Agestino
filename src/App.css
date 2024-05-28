@@ -2309,3 +2309,12 @@ section.traders_sec {
   line-height: 1.5;
   font-weight: 600;
 }
+.graph_row .graph_img button.btn.btn-primary {
+  background: none;
+  border: none;
+}
+
+.graph_row .graph_img button.btn.btn-primary:hover {
+  box-shadow: none;
+  outline: none;
+}
