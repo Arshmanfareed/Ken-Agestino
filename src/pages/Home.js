@@ -31,7 +31,7 @@ function Home() {
             <div className="graph_img">
             <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
 
-                <img src="assets/images/02.png" />
+                <img src="assets/images/01.png" />
               </button>
               <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
 
@@ -105,7 +105,7 @@ function Home() {
             <div className="graph_img">
             <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal3">
 
-                <img src="assets/images/02.png" />
+                <img src="assets/images/03.png" />
               </button>
               <div class="modal fade" id="exampleModal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
 
@@ -218,7 +218,7 @@ loss can be trailed with one of the averages
       {/*    </Container>*/}
       {/*</section>*/}
       <section className="NewsletterSec">
-        <SecNewsLetter />
+        {/* <SecNewsLetter /> */}
       </section>
     </>
   );
