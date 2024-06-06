@@ -19,7 +19,7 @@ function Home() {
     </div>
     </Container>
 </section> */}
-      <section className="OurBestPlatform">
+      <section className="OurBestPlatform about_Sec">
         <SecBestPlatform />
       </section>
       <section className=" traders_sec">

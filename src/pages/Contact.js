@@ -23,7 +23,7 @@ function Contact() {
           <div className="row">
             <div className="col-12 col-md-7">
               <div className="thumb">
-                <img src="assets/images/platform-img.png" />
+                <img src="assets/images/about_sec.jpg" />
               </div>
             </div>
             <div className="col-12 col-md-5">
