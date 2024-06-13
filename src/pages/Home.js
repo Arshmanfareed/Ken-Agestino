@@ -52,7 +52,7 @@ function Home() {
                         <div className="row">
                           <div className="col-6 cont">
                             <h4>
-                            Once SPOT broke this level, it rallied$3.00
+                            Once SPOT broke this level, it rallied $3.00
                             </h4>
                           </div>
                           <div className="col-6 img_col">

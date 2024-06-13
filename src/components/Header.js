@@ -80,11 +80,9 @@ useEffect(() => {
                 <li className="dropdown">
                   <a href="#" className="dropbtn">Trading Room <FaChevronDown className="custom-chevron" /></a>
                   <div className="dropdown-content">
-                    <a className="dropdown-item"  href="javascript:void(0);">Currencies</a>
                     <Link className="" to="/stocks">
                       Stocks
                     </Link>
-                    <a  className="dropdown-item" href="javascript:void(0);">Commodities</a>
                   </div>
                 </li>
                 {/* <li className="nav-item">
