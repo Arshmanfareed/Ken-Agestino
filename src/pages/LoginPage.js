@@ -9,9 +9,7 @@ function RegisterPage() {
     return (
         <>
 
-            <section className="OurBestPlatform">
                 <LoginComponent />
-            </section>
 
         </>
     );

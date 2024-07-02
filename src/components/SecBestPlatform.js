@@ -7,7 +7,7 @@ function SecBestPlatform() {
         <Row className="align-items-center">
           <Col lg={6} md={6} sm={12}>
             <div className="PlatformImg">
-              <img src="assets/images/platform-img.png" />
+              <img src="assets/images/about_sec.jpg" />
             </div>
           </Col>
           <Col sm={12} md={6} lg={6}>
