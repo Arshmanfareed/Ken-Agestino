@@ -112,7 +112,7 @@ const CreateUserGroupModal = ({onGroupCreated}) => {
           +
         </Button>
         
-        <Modal show={show} className='grp_modal' onHide={handleClose} aria-labelledby="contained-modal-title-vcenter" centered>
+        <Modal show={show} className='grp_modal crt_grp_mod' onHide={handleClose} aria-labelledby="contained-modal-title-vcenter" centered>
           <Modal.Header closeButton>
             <Modal.Title>{step === 1 ? 'Create Group' : 'Select Users'}</Modal.Title>
           </Modal.Header>
