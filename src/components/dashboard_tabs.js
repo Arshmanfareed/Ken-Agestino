@@ -48,6 +48,7 @@ const Dashboard_tabs = () => {
   const handleClose = () => setShow(false);
 
   const closePop = () => {
+    console.log('asdadasdas')
     setimagePubPopshow(false);
     setSelectedPubFile(null);
     setSelectedPubSendFile(null); 

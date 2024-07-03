@@ -2357,3 +2357,43 @@ section.traders_sec {
 section.OurBestPlatform.about_Sec {
   padding-top: 250px;
 }
+.fade.modal.show {
+  z-index: 999999999999999999999999 !important;
+  opacity: 1;
+  padding-top: 10%;
+}
+
+.grp_modal .modal-header {
+  /* height: 90px !important; */
+  min-height: unset !important;
+  position: unset !important;
+  overflow: visible;
+}
+
+.grp_modal .modal-header .modal-title.h4 {
+  text-align: center;
+}
+
+.grp_modal .modal-header svg {
+  position: absolute;
+  top: 2%;
+  right: 1%;
+  width: 40px;
+  height: 40px;
+  color: red;
+}
+.c-msg.g-mg {
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+.crt_grp_mod.modal.show .modal-dialog {
+    width: 50%!important;
+}
+.crt_grp_mod.modal.show .modal-dialog .modal-body {
+    padding-top: 40px;
+    padding-bottom: 50px;
+}
+.crt_grp_mod.modal.show .modal-dialog  .modal-footer {
+    justify-content: center;
+}
