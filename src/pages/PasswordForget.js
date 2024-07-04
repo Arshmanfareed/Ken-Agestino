@@ -29,7 +29,6 @@ const PasswordForget = () => {
         );
     
         if (response.status >= 200 && response.status < 300) {
-          console.log('Success:', response.data);
           element.style.display = "none";
           setSuccessMessage(response.data.status);
         } else {

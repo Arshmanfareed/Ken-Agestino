@@ -59,7 +59,6 @@ const RegistrationForm = () => {
                 },
             })
             .then((response) => {
-                console.log('Response from Laravel:', response.data);
                 setSuccessMessage('User registered successfully');
 
             })

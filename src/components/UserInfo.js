@@ -19,8 +19,7 @@ function UserInfo() {
         const fetchData = async () => {
             try {
                 const response = await axios.get(`${apiURL}/api/resource?user_id=${user_id}`);
-                console.log(response.data);
-                console.log(apiURL);
+                
                 setUserData(response.data);
             } catch (error) {
                 console.error('Error:', error);

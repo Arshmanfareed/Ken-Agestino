@@ -77,7 +77,6 @@ const Profile = () => {
         }
       )
       .then((response) => {
-        console.log('Response from Laravel:', response.data);
         setSuccessMessage('User Updated Successfully');
         // Optionally, you can fetch updated user data after a successful update
         fetchData();

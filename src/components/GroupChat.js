@@ -80,7 +80,7 @@ const CreateUserGroupModal = ({onGroupCreated}) => {
           })
             .then(response => response.json())
             .then(result => {
-              console.log('Server response:', result);
+             
               var group_name = result.group_name;
 
               onGroupCreated({ id: result.id, name: group_name, created_at: result.created_at, 
@@ -215,14 +215,14 @@ const GroupChat = ({ activeTab, userGroups, onGroupCreated, setUserGroups   }) =
       });
       const channel = pusher.subscribe('group-chat');
       channel.bind('group-message', (data) => {
-        console.log('Received Group  message:', data);
-        // console.log('Received Group ID', data.groupId);
+       
+        //
         const group_id = localStorage.getItem('group_id');
-        // console.log('Selected Group ID', group_id);  
+        //
               
        
         if(data.groupId == group_id){
-          // console.log(group_id);
+          //
           setGroupMessages((prevMessages) => [
             ...prevMessages,
             {
@@ -263,8 +263,8 @@ const GroupChat = ({ activeTab, userGroups, onGroupCreated, setUserGroups   }) =
     };
 
     const completeUsersAdd = () => {
-      console.log(selectedGroupId);
-      console.log(selectedUserIds);
+     
+     
       setLoading(true);
 
       const data = {
@@ -281,7 +281,7 @@ const GroupChat = ({ activeTab, userGroups, onGroupCreated, setUserGroups   }) =
       })
       .then(response => response.json())
       .then(data => {
-          console.log(data); 
+         
           setLoading(false);
           setshowAddUserModal(false);
           setGroupMembers(data.all_group_members);
@@ -330,7 +330,7 @@ const GroupChat = ({ activeTab, userGroups, onGroupCreated, setUserGroups   }) =
     const sendMessageToGroup = () => {
       const userMessage = document.getElementById('userMessage_grp').value;
       const currentUserId = localStorage.getItem('user_id');
-      console.log(selectedSendFile);
+     
       const formData = new FormData();
       formData.append('image', selectedSendFile);
       formData.append('groupId', selectedGroupId);
@@ -343,7 +343,7 @@ const GroupChat = ({ activeTab, userGroups, onGroupCreated, setUserGroups   }) =
       })
       .then(response => response.json())
       .then(result => {
-          console.log('Group Message sent successfully:', result);
+         
           setimagePopshow(false);
           setSelectedFile(null);
           setSelectedSendFile(null);
@@ -384,7 +384,7 @@ const GroupChat = ({ activeTab, userGroups, onGroupCreated, setUserGroups   }) =
 
     const handleDeleteGroup = (groupId) => {
         setSelectedGroupId(groupId); // Set the selected group ID for deletion
-        console.log(groupId);
+       
         setShow(true);
     };
 
@@ -398,7 +398,7 @@ const GroupChat = ({ activeTab, userGroups, onGroupCreated, setUserGroups   }) =
         })
         .then(response => response.json())
         .then(result => {
-          console.log('Server response:', result);
+         
           const groupData = result.group; // Check if 'group' data is present in the result
           if (groupData) {
               setGroupTitle(groupData.name);
@@ -410,7 +410,7 @@ const GroupChat = ({ activeTab, userGroups, onGroupCreated, setUserGroups   }) =
               localStorage.setItem('group_id', groupId);
               setGroupCreater(result.created_user_name)
               setChatLoading(false);
-              console.log(localStorage.getItem('group_id'));
+             
           } else {
               console.error('Group data not found in the server response.');
           }
@@ -423,7 +423,7 @@ const GroupChat = ({ activeTab, userGroups, onGroupCreated, setUserGroups   }) =
     }
 
     const addUsersInGroup = () => {
-      console.log(selectedGroupId);
+     
       setshowAddUserModal(true);
 
       fetch(`${apiURL}/api/allusers`)

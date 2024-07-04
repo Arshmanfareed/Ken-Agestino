@@ -48,7 +48,7 @@ const Dashboard_tabs = () => {
   const handleClose = () => setShow(false);
 
   const closePop = () => {
-    console.log('asdadasdas')
+    
     setimagePubPopshow(false);
     setSelectedPubFile(null);
     setSelectedPubSendFile(null); 
@@ -145,15 +145,15 @@ const Dashboard_tabs = () => {
         };
       
         const stringToSign = `${socketId}:${channelName}`;
-        console.log('Authentication Data:', authData);
-        console.log('String to Sign:', stringToSign);
+        
+        
       });
 
     if (activeTab === 'public_chat') {
       const channel = pusher.subscribe('chat');
       
       channel.bind('test-event', (data) => {
-        console.log('Received public message:', data);
+        
         setPublicChatMessages((prevMessages) => [
           ...prevMessages,
           { message: data.message, username: data.username, image: data.image, created_at: data.created_at }
@@ -180,7 +180,7 @@ const Dashboard_tabs = () => {
       fetch(`${apiURL}/api/user_groups/${localStorage.getItem('user_id')}`)
         .then(response => response.json())
         .then(data => {
-          console.log('User Groups:', data);
+          
           setUserGroups(data);
         })
         .catch(error => {
@@ -194,11 +194,11 @@ const Dashboard_tabs = () => {
       
     
     privateChatChannel.bind('one-message-5-6', (data) => {
-      console.log('Received private message:', data);
+      
       const loggedInUserId = localStorage.getItem('user_id');
       
       if (data.sender_id == loggedInUserId || data.receiver_id == loggedInUserId) {
-        console.log(loggedInUserId);
+        
         setPrivateChatMessages((prevMessages) => [
           ...prevMessages,
           {
@@ -212,7 +212,7 @@ const Dashboard_tabs = () => {
         ]);                
       }
       if (data.receiver_id == loggedInUserId) {
-        console.log(data.sender_name);
+        
         // addNotification({
         //   title: data.sender_name,
         //   message: data.message,
@@ -241,7 +241,7 @@ const Dashboard_tabs = () => {
 
   const handlePubFileChange = (event) => {      
     const file = event.target.files[0];
-    console.log(file);
+    
     setSelectedPubSendFile(file);
     if (file) {
       setSelectedPubFile(URL.createObjectURL(file));
@@ -252,7 +252,7 @@ const Dashboard_tabs = () => {
 
   const handlePvtFileChange = (event) => {      
     const file = event.target.files[0];
-    console.log(file);
+    
     setSelectedPvtSendFile(file);
     if (file) {
       setSelectedPvtFile(URL.createObjectURL(file));
@@ -273,8 +273,8 @@ const Dashboard_tabs = () => {
 
   const sendMessage = (chatBoxId, userMessageId) => {
     const userid = localStorage.getItem('user_id');
-    console.log(userid);
-    console.log(selectedPubSendFile);
+    
+    
     const userMessage = document.getElementById(userMessageId).value;
 
     const formData = new FormData();
@@ -293,7 +293,7 @@ const Dashboard_tabs = () => {
         return response.json();
       })
       .then(data => {
-        console.log('Message sent successfully:', data);
+        
         setimagePubPopshow(false);
         setSelectedPubFile(null);
         setSelectedPubSendFile(null);
@@ -439,7 +439,7 @@ const Dashboard_tabs = () => {
     })
       .then(response => response.json())
       .then(data => {
-        console.log('Private message sent successfully:', data);
+        
 
         setimagePvtPopshow(false);
         setSelectedPvtFile(null);
