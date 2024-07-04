@@ -13,7 +13,6 @@ const PasswordReset = () => {
   const location = useLocation();
   const queryParams = new URLSearchParams(location.search);
   const token = queryParams.get('token');
-  // console.log(token);
 
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
@@ -46,7 +45,6 @@ const PasswordReset = () => {
           },
         }
       );
-      console.log(response.data);
       element.style.display = "none";
       setSuccessMessage(response.data.message);
     } catch (error) {

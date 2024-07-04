@@ -18,7 +18,6 @@ function ImageUploadForm() {
     })
       .then(response => response.json())
       .then(data => {
-        console.log('Image uploaded successfully:', data.imageUrl);
         setgroupImage(data.imageUrl);
         // Do something with the returned image URL
       })
